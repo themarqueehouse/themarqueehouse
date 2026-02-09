@@ -1,0 +1,33 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+
+<main class="site-content" role="main">
+    <section id="faqs">
+        <div class="container">
+            <div class="text-center">
+                <h2>FAQs</h2>
+                <p>Answers to common questions about our marquee letter rentals.</p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faq1">
+                        <h5><button data-toggle="collapse" data-target="#collapse1">How big are the letters?</button></h5>
+                    </div>
+                    <div id="collapse1" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">All letters are 3.5 ft tall and wooden.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq2">
+                        <h5><button data-toggle="collapse" data-target="#collapse2">Do I need power outlets?</button></h5>
+                    </div>
+                    <div id="collapse2" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">No, our letters are battery-powered.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include('blocks/footer.htm')
